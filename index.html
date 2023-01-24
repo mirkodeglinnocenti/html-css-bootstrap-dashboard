@@ -24,11 +24,20 @@
                         <img class="d-none d-lg-block desktop-logo" src="./img/logo.svg" alt="logo di Boolean">
                     </a>
                     
-                    <div class="w-100 me-auto position-relative">
+                    <!-- Barra di Ricerca con lente creata con un BEFORE -->
+
+                    <!-- <div class="w-100 me-auto position-relative">
                         <form class="d-flex  search-box" role="search">
                             <input class="form-control search-bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                         </form>
-                    </div>
+                    </div> -->
+
+                    <form class="container-fluid">
+                        <div class="input-group search-form">
+                          <span class="input-group-text search-form" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                          <input type="text" class="form-control search-form" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </div>
+                    </form>
                     
                     <ul class="navbar-nav">
 
@@ -72,8 +81,48 @@
 
         <main class="main-content vertical-macro-layout__bottom horizontal-macro-layout">
             
-            <aside class="sidebar">
-                sidebar
+            <aside class="sidebar d-flex flex-column">
+                
+                <nav class="nav-sidebar">
+
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-inline-block">Home</span> 
+                            </a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline-block">Stats</span> 
+                            </a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline-block">Signals</span> 
+                            </a>
+                        </li>
+                  
+                    </ul>
+
+                    <ul class="nav flex-column mt-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="d-none d-lg-inline-block">Admin</span> 
+                            </a>
+                        </li>
+                  
+                    </ul>
+
+                </nav>
+
             </aside>
 
             <div class="main-content">
