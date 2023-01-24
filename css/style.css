@@ -12,7 +12,6 @@
     background-color: aqua;
     height: 70px;
     flex-shrink: 0;
-    overflow: hidden;
 }
 
 .vertical-macro-layout__bottom{
@@ -46,4 +45,50 @@
         width: 150px;
     }
 
+}
+
+/* Header */
+
+.main-header .navbar{
+    padding: 15px 0;
+}
+
+.main-header .mobile-logo{
+    width: 32px;
+}
+
+.main-header .desktop-logo{
+    width: 133px;
+}
+
+.main-header .search-bar{
+    background-color: #E5E5E5;
+}
+
+.main-header .search-bar::placeholder{
+    color: #777777;
+    padding-left: 20px;
+}
+
+.search-box::before{
+    content: "\f002";
+    display: block;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.main-header .fa-bell{
+    color: #FF8F00;
+}
+
+.main-header .nav-link > .fa-solid{
+    font-size: 20px;
+}
+
+.main-header .dropdown-toggle::after{
+    display: none;
 }
