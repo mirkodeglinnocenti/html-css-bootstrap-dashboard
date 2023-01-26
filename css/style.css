@@ -6,6 +6,13 @@
 }
 
 
+/* General */
+
+.title-big{
+    font-size: 30px;
+    font-weight: 600;
+}
+
 /* Vertical Macro Layout */
 
 .vertical-macro-layout {
@@ -21,7 +28,6 @@
 }
 
 .vertical-macro-layout__bottom{
-    background-color: salmon;
     flex-grow: 1;
     overflow: hidden;
 }
@@ -38,11 +44,6 @@
     flex-shrink: 0;
     overflow: hidden;
     border: 1px solid black;
-}
-
-.main-content{
-    flex-grow: 1;
-    overflow-y: auto;
 }
 
 @media screen and (min-width:992px) {
@@ -138,3 +139,22 @@
 .sidebar .nav-item {
     margin-bottom: 22px;
 }
+
+/* Dashboard content */
+
+.dashboard-content{
+    flex-grow: 1;
+}
+
+/* Content header */
+
+.content-header{
+    background-color: #1B72E8;
+    padding: 2px8 12px;
+}
+
+.content-header .tag-header{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
