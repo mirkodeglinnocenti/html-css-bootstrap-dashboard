@@ -18,6 +18,11 @@
     font-weight: 600;
 }
 
+.title-content-header{
+    font-size: 15px;
+    font-weight: 500;
+}
+
 /* Vertical Macro Layout */
 
 .vertical-macro-layout {
@@ -123,7 +128,7 @@
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--sidebar-color);
     color: white;
-    padding: 34px 0 0 24px;
+    padding: 34px 15px 0 24px;
 }
 
 .sidebar .nav-sidebar{
@@ -133,7 +138,7 @@
 .sidebar .nav-link{
     color: white;
     font-weight: 600;
-    padding: 0;
+    padding: 10px 4px;
 }
 
 .sidebar .nav-link .fa-solid{
@@ -141,20 +146,33 @@
     margin-right: 16px;
 }
 
-.sidebar .nav-item {
-    margin-bottom: 22px;
+.sidebar .nav-item:hover{
+    background-color: #a3a3a3b6;
 }
 
 /* Content header */
 
 .content-header{
     background-color: #1B72E8;
-    padding: 2px 12px;
+    padding: 25px 12px;
 }
 
 .content-header .tag-header{
+    font-size: 14px;
+    border-radius: 1rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(50, 50, 50, 0.25);
+}
+
+.studenti-counter{
+    font-size: 32px;
+}
+
+.dashboard-content .content-header .fa-solid{
+    color: currentColor;
+    border: 0;
+    padding: 8px;
+    border-radius: 0;
 }
 
 /* OFFCANVAS */
@@ -162,10 +180,24 @@
 .content-header .canvas-icon.fa-solid{
     color: white;
     border: 1px solid white;
+    border-radius: 5px;
+}
+
+.content-header .canvas-icon.fa-solid:hover{
+    color: black;
+    background-color: white;
+    border: 0;
 }
 
 .offcanvas.offcanvas-end{
-    width: 40%;
+    width: 100%;
+}
+
+@media screen and (min-width:576) {
+
+    .offcanvas.offcanvas-end{
+        width: 40%;
+    }
 }
 
 /* Dashboard content */
